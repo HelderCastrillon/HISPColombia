@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <MuiThemeProvider theme={theme}>
-       {"Hola mundo"}
+       {"Hola estudiantes"}
       </MuiThemeProvider>
     </div>
   );
