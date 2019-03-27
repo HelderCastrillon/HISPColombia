@@ -1,12 +1,12 @@
 {
-  "name": "Web Site to Hisp Colombia",
+  "name": "WebSitetoHispColombia",
   "version": "1.0.0",
   "description": "Web Site to Hisp Colombia update to 2019",
   "main": "./src/app.js",
   "scripts": {
     "build": "webpack --colors --progress",
     "serve": "webpack-dev-server --colors --progress",
-    "diego": "npm run build && npm run serve",
+    "start": "npm run build && npm run serve",
     "production": "webpack -p"
   },
   "author": "Helder Castrillon <heldersoft@gmail.com> (https://github.com/HelderCastrillon)",
@@ -40,11 +40,12 @@
     "react-hot-loader": "^4.7.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
-    "@material-ui/icons": "^3.0.2"
+    "@material-ui/icons": "^3.0.2",
+    "react-swipeable-views": "^0.13.1"
   }
 }
