@@ -25,5 +25,9 @@ const theme = createMuiTheme({
       formInput: {
           fontWeight: 100,
       },
+      logo:{
+          width:100,
+          height:100
+      }
   });
   

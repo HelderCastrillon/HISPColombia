@@ -3,7 +3,10 @@ const path = require('path');
 const endPath = path.resolve(__dirname, 'public');
 
 module.exports = {
-  entry: './src/app.js',
+  entry:
+  {
+    app: './src/app.js'
+  },
   mode: 'development', // faltó especificar en que modo
   output: {
     path: endPath,//path.resolve(__dirname, 'dist'),
@@ -20,7 +23,19 @@ module.exports = {
               test: /\.css$/,
               use: ['style-loader', 'css-loader'] 
               // loader: 'style-loader!css-loader' 
-          }
+          },
+          {
+            test: /\.(jpg|png|gif|svg|pdf|ico)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]'
+                    },
+                },
+            ]
+        },
+          
       ]
   },
   plugins: [
