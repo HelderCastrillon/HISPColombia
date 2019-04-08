@@ -20,7 +20,12 @@ module.exports = {
               test: /\.css$/,
               use: ['style-loader', 'css-loader'] 
               // loader: 'style-loader!css-loader' 
-          }
+        },
+        {
+          test: /\.(png|jpeg|jpg|gif)$/,
+          exclude: '/node_modules/',
+          use: 'file-loader' // traspilador babel
+        }, 
       ]
   },
   plugins: [
