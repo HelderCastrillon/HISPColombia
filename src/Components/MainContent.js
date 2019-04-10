@@ -5,7 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-
+import Logo from '../Images/Logo.png'
 
 function MainConcent(props) {
     const { styles } = props.theme;
@@ -16,7 +16,7 @@ function MainConcent(props) {
                     <AppBar position="static" style={styles.AppBar}>
                         <Toolbar>
                              <Typography variant="h6" color="inherit" style={styles.grow}>
-                                HISP Colombia
+                             Consultoría en Sistemas de Información en Salud
                             </Typography>
                             <Button color="inherit">Servicios</Button>
                             <Button color="inherit">Proyectos</Button>
@@ -26,6 +26,7 @@ function MainConcent(props) {
                     </AppBar>
                 </Grid>
                 <Grid item xs={12} style={styles.ContentMain}>
+                <div style={styles.backgroundLogo}>
                     <Typography variant="h1" color="inherit" style={styles.MainTitle}>
                         HISP Colombia
                     </Typography>
@@ -33,8 +34,10 @@ function MainConcent(props) {
                         Confia en nuestra experiencia
                     </Typography>
                     <Button variant="outlined" color="inherit" style={styles.MainButton}>Leer más</Button>
+
+                </div>
                 </Grid>
-                <Grid item xs={12} style={styles.backgroundLogo}>
+                <Grid item xs={12}>
                     
                 </Grid>
             </Grid>

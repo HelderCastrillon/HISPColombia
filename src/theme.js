@@ -26,12 +26,17 @@ const theme = createMuiTheme({
             color: 'white'
         },
         backgroundLogo:{
-            backgroundImage:{Logo},
-            height:800
+            backgroundImage: "url("+Logo+")", 
+            width: '100%', 
+            height: '100%',
+            backgroundRepeat:'no-repeat',
+            backgroundPosition:'right center',
+            bgproperties:'fixed'
+
         },
         ContentMain:{
-            padding: '0 300px',
-            paddingTop:300
+            paddingLeft:300,
+            paddingTop:100
         },
         Content:{
             background: 'linear-gradient(45deg, #455A64 30%, #607D8B 90%)',
